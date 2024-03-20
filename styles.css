@@ -1,17 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
 *{
-  margin: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
 }
-
 body{
-  width: 100vw;
-  height: 100vh;
+  background-image: url('/assets/images/background.jpg');
+  background-position: center center;
+  background-size: cover;
 }
 
+/* Header */
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+  padding: 5px 10%;
+}
+
+header h4{
+  color: #1b3039;
+  font-weight: bold;
+  font-size: 3rem;
+  cursor: pointer;
+  margin: auto;
+  width: auto;
+  transition: all 0.3s;
+}
+
+header h4:hover{
+  transform: scale(1.2);
+}
+
+header .nav-links{
+  list-style: none;
+}
+
+header .nav-links li{
+  display: inline-block;
+  padding: 0 20px;    
+  margin-top: 20px;
+}
+
+header .nav-links li:hover,
+.overlay a:hover{
+  transform: scale(1.1);
+}
+
+.btn-nav{
+  background-color: #ffbc0e;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-icons{
+  width: 40px;
+  height: 40px;
+  fill: aliceblue;
+  margin: 5px;
+}
+
+.btn-menu {
+  display:none;
+}
+
+.menu-icon{
+  fill: black;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-menu button{
+  background-color: none;
+  margin-top: 10px;
+  padding: 9px 25px;
+  border: solid aliceblue ;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+a{
+  text-decoration: none;  
+}
+
+.new-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(63, 53, 33, 0.95);
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+}
+
+.new-menu .new-menu-content{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+}
+
+.new-menu a{
+  padding: 15px;
+  font-size: 36px;
+  display: block;
+  transition: all 0.3s ease 0s;
+  font-weight: 700;
+  color: #eceff1;
+}
+
+.new-menu .close{
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 65px;
+}
+
+/* Main */
+main{
+  
+}
+
+.form{
+  background-color: #ecececff;
+  width: 600px;
+  height: 450px;
+}
+
+
+
+
+/*  Footer */
 footer{
-  background-color: #1b1b32;
+  margin: 0;
+  background-color: #37395bff;
   color: aliceblue;
-  min-height: 250px;
+  min-height: 150px;
 }
 
 .footer.links{
@@ -26,6 +159,26 @@ footer{
   margin: 3px;
   width: 75px;
   height: 75px;
-  color: white;
   fill: aliceblue;
+}
+
+@media screen and (max-width: 800px){
+  .nav-links{
+      display: none;
+  }
+  .btn-menu {
+      display: inherit;
+  }
+}
+
+
+@media screen and (max-height:450px) {
+  .new-menu a{
+      font-size: 20px;
+  }
+  .new-menu .close{
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+  }
 }
