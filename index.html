@@ -19,75 +19,91 @@
 
   <!-- Archivo Css-->
   <link rel="stylesheet" href="./styles.css">
+
+  <script defer type="text/javascript" src="./script.js"></script>
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg  container-fluid justify-content-between align-items-center">
-    <!-- Botones de selección -->
-    <section class="d-flex justify-content-evenly align-items-center">
-      <a href="#">
-        <button type="button" class="btn text-white btn-nav">
-          <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1
-                    0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 
-                    24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 
-                    .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
-          </svg>
-          Home
-        </button>
-      </a>
+  <!-- Header -->
+  <header  class="container-fluid">
+    <nav class="conteiner-fluid">
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html">
+            <button type="button" class="btn text-white btn-nav">
+              <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1
+                        0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 
+                        24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 
+                        .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+              </svg>
+              Home
+            </button>
+          </a>
+        </li>
 
-      <a href="./pages/about_me.html">
-        <button type="button" class="btn text-white btn-nav">
-          <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-            <path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 
-                    15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 
-                    97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
-            />
-          </svg>
-          Un poco sobre mi
-        </button>
-      </a>
-    </section>
-
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Titulo de la pagina -->
-    <section class="text-white">
-        <h4 class="page-title">Caroline Sada</h4>
-    </section>
-
-    <!-- Contacto -->
-    <section>
-      <a href="./pages/contact_me.html">
-        <button type="button" class="btn text-white btn-nav">
-          <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 
-                    19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 
-                    17.1-54 17.1-76.8 0L0 176z"
-            />
-          </svg>
-          Contactame 
-        </button>
-      </a>
-    </section>
-  </nav>
-
-  <!-- Main -->
-  <main>
-    <h1>Oye tienes problemas con tu dinero y no sabes que hacer?</h1>
-    <p>Soy <strong>Caroline Sada</strong>, experta financiera, contactame y hagamos que tu dinero sea un tema tranquilo.</p>
-    <strong>No dudes más!!!</strong>
+        <li>
+          <a href="./pages/about_me.html">
+            <button type="button" class="btn text-white btn-nav">
+              <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                <path d="M112 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm40 304V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V256.9L59.4 304.5c-9.1 
+                        15.1-28.8 20-43.9 10.9s-20-28.8-10.9-43.9l58.3-97c17.4-28.9 48.6-46.6 82.3-46.6h29.7c33.7 0 64.9 17.7 82.3 46.6l58.3 
+                        97c9.1 15.1 4.2 34.8-10.9 43.9s-34.8 4.2-43.9-10.9L232 256.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32V352H152z"
+                />
+              </svg>
+              Un poco sobre mi
+            </button>
+          </a>
+        </li>
+      </ul>            
+    </nav>
+  
+    <h4>Caroline Sada</h4>
 
     <a href="./pages/contact_me.html">
-      <button type="button">
+      <button type="button" class="btn text-white btn-nav nav-links">
+        <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 
+                  19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 
+                  17.1-54 17.1-76.8 0L0 176z"
+          />
+        </svg>
         Contactame
       </button>
     </a>
+  
+  
+    <button onclick="openNav()" class="btn-menu">
+        <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </button>
+  
+  
+    <section id="mobile-menu" class="new-menu">
+        <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="new-menu-content">
+          <a href="#">Home</a>
+          <a href="./pages/about_me.html">Acerca de mi</a>
+          <a href="./pages/contact_me.html">Contactame</a>
+        </div>
+    </section>
+  </header>
 
-    <h1 class="bg-secondary text-center text-white">Hey, aún no te animas, envia un correo y recibiras un descuento del 30% con el código CAROSA123</h1>
+  <!-- Main -->
+  <main>
+    <section class="my-5 container text"> 
+      <h1 class="title">Oye tienes problemas con tu dinero y no sabes que hacer?</h1>
+      <p class="presentation">Soy <strong>Caroline Sada</strong>, experta financiera, contactame y hagamos que tu dinero sea un tema tranquilo.</p>
+      <strong>No dudes más!!!</strong>
+  
+      <a href="./pages/contact_me.html">
+        <button type="button" class="btn text-white btn-nav my-3">
+          Contactame
+        </button>
+      </a>
+    </section>
+
+    <h5 class="bg-secondary text-center text-white container-fluid">Hey, aún no te animas, envia un correo y recibiras un descuento del 30% con el código CAROSA123</h5>
   </main>
 
   <!-- Footer -->
