@@ -132,6 +132,11 @@ a{
   width: 700px;
 }
 
+.main-contact{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .presentation{
   color: rgba(244, 26, 26, 0.616);
   width: 400px;
@@ -252,8 +257,13 @@ footer{
     width: 70%;
   }
 
+  .main-contact{
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
   .text{
-    margin: 100px 10px;
+    margin: 120px 10px;
   }
 
   .form{
