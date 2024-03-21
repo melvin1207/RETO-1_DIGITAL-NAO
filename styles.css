@@ -228,7 +228,7 @@ footer{
 }
 
 
-@media screen and (max-height:450px) {
+@media screen and (max-width:450px) {
   .new-menu a{
       font-size: 20px;
   }
@@ -239,7 +239,19 @@ footer{
   }
 
   header h4{
+    padding-top: 20px;
     font-size: 2rem;
+  }
+
+  .title{
+    font-size: 30px;
+    width: 95%;
+  }
+  
+  .presentation{
+    color: rgba(244, 26, 26, 0.616);
+    width: 70%;
+    font-weight: bold;
   }
 
   .form{
