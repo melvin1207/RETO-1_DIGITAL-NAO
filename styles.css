@@ -150,6 +150,43 @@ main h5{
   padding: 10px;
 }
 
+.main-icon{
+  margin: 10px;
+  width: 400px;
+  height: 400px;
+}
+
+.history{
+  line-height: 1.5;
+  font-weight: bold;
+  columns: 2;
+  color: rgba(244, 26, 26, 0.816);
+}
+
+.about-me-title{
+  font-weight: bold;
+}
+
+.about-me-profession{
+  color: rgba(26, 113, 244, 0.616);
+}
+
+.about-me-age{
+  color: rgba(244, 26, 26, 0.616);
+  font-weight: bold;
+  margin: 0;
+}
+
+.about-me-job{
+  color: rgba(222, 26, 244, 0.663);
+}
+
+.about-me-married{
+  font-weight: bold;
+
+}
+
+
 
 
 .form{
@@ -203,5 +240,10 @@ footer{
 
   header h4{
     font-size: 2rem;
+  }
+
+  .form{
+    width: 290px;
+    height: 450px;
   }
 }

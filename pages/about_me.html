@@ -19,76 +19,102 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../styles.css">
+
+  <script defer type="text/javascript" src="../script.js"></script>
 </head>
 <body>
   <!-- Header -->
-  <header>
-    <!-- Botones de selección -->
-    <section>
-      <a href="../index.html">
-        <button type="button">
-          <img src="../assets/icons/home.svg" alt="Icono de Home">
-          Home
-        </button>
-      </a>
-
-    <!-- Titulo de la pagina -->
-    <section>
-        <h4>Caroline Sada</h4>
-    </section>
-
-    <!-- Contacto -->
-    <section>
-      <a href="./contact_me.html">
-        <button type="button">
-          <img src="../assets/icons/envelope.svg" alt="Icono de  Correo Electrónico">
-          Contactame 
-        </button>
-      </a>
+  <header  class="container-fluid">
+    <nav class="conteiner-fluid">
+      <ul class="nav-links">
+        <li>
+          <a href="../index.html">
+            <button type="button" class="btn text-white btn-nav">
+              <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1
+                        0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 
+                        24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 
+                        .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/>
+              </svg>
+              Home
+            </button>
+          </a>
+        </li>
+      </ul>            
+    </nav>
+    
+    <h4>Caroline Sada</h4>
+  
+    <a href="./contact_me.html">
+      <button type="button" class="btn text-white btn-nav nav-links">
+        <svg class="nav-icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+          <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 
+                  19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 
+                  17.1-54 17.1-76.8 0L0 176z"
+          />
+        </svg>
+        Contactame
+      </button>
+    </a>
+  
+    <button onclick="openNav()" class="btn-menu">
+      <svg class="menu-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+    
+    <section id="mobile-menu" class="new-menu">
+      <a onclick="closeNav()" href="" class="close">&times;</a>
+        <div class="new-menu-content">
+          <a href="../index.html">Home</a>
+          <a href="./contact_me.html">Contactame</a>
+        </div>
     </section>
   </header>
 
-    <!-- Main -->
-    <main>
-      <!-- Main information -->
-      <section>
-        <article>
-          <h1>Hola ¿como estas?, Me llamo Caroline Sada</h1>
-          <h2>Soy licenciada en Administración y Dirección de Empresas</h2>
-          <h5>34 años</h5>
-          <h5>Influencer Financiera</h5>
-  
-          <p>Felizmente casada con Tómas</p>
-        </article>
+  <!-- Main -->
+  <main class="container my-5">
+    <!-- Main information -->
+    <section class="container d-flex justify-content-evenly align-items-center">
+      <article class="d-flex flex-column justify-content-evenly">
+          <h1 class="about-me-title">Hola ¿como estas?, Me llamo Caroline Sada</h1>
+          <h2 class="about-me-profession">Soy licenciada en Administración y Dirección de Empresas</h2>
+          <h5 class="about-me-age">34 años</h5>
+          <h5 class="about-me-job">Influencer Financiera</h5>
+          <p class="about-me-married">Felizmente casada con Tómas</p>
+      </article>
 
-        <img src="../assets/icons/person.svg" alt="Imagen de Caroline Sada">
-      </section>
+      <svg class="main-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+        <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5M.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5m15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5"/>
+        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+      </svg>
+    </section>
 
-      <!-- History of a life-->
-      <section>
-        <p>
-          Recuerdo que el mundo de las finanzas siempre me ha llamado, por eso elegi mi carrera, pero dejame contarte como comenzó
-          mi hostoria como influencer...
-        </p>
+    <!-- History of a life-->
+    <section class="container history">
+    <p>
+      Recuerdo que el mundo de las finanzas siempre me ha llamado, por eso elegi mi carrera, pero dejame contarte como comenzó
+      mi hostoria como influencer...
+    </p>
 
-        <p>
-          Cuando tenia 30 años me case con Tomás, en los momentos de organización me di cuenta que brille por diferentes aptitudes de 
-          organización, empatía y gestión, fue asi como al siguiente año, decidi comenzar mi carrera en el mundo del internet, y combine 
-          las capacidades que comente, junto con los conocimientos de mi carrera.
-        </p>
+    <p>
+      Cuando tenia 30 años me case con Tomás, en los momentos de organización me di cuenta que brille por diferentes aptitudes de 
+      organización, empatía y gestión, fue asi como al siguiente año, decidi comenzar mi carrera en el mundo del internet, y combine 
+      las capacidades que comente, junto con los conocimientos de mi carrera.
+    </p>
 
-        <p>
-            Desde entonces he compartido por medio de diferentes plataformas, principalmente en Tik Tok mis conocimientos y algunos consejos que
-            sin duda me han servido en mi vida diaria y que vi como una prioridad compartirlos con ustedes.
-        </p>
+    <p>
+      Desde entonces he compartido por medio de diferentes plataformas, principalmente en Tik Tok mis conocimientos y algunos consejos que
+      sin duda me han servido en mi vida diaria y que vi como una prioridad compartirlos con ustedes.
+    </p>
 
-        <p>
-          Sin embargo he leido mucho sus comentarios en redes, y me he dado cuenta que videos cortos no son suficientes para ayudar 
-          tanto como lo quiero, es por eso que he decidido crear un nuevo curso el cuál sin duda será una experiencia totalmente nueva 
-          para mi y para ti, animate a inscribirte en el boton de contacto...
-        </p>
-      </section>
-    </main>
+    <p>
+      Sin embargo he leido mucho sus comentarios en redes, y me he dado cuenta que videos cortos no son suficientes para ayudar 
+      tanto como lo quiero, es por eso que he decidido crear un nuevo curso el cuál sin duda será una experiencia totalmente nueva 
+      para mi y para ti, animate a inscribirte en el boton de contacto...
+    </p>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer class="container-fluid d-flex flex-column justify-content-evenly align-items-center">
