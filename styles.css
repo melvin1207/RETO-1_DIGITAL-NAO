@@ -147,6 +147,11 @@ a{
   margin: 60px 60px;
 }
 
+.btn-primary{
+  display: block;
+  width: 100%;
+}
+
 strong{
   color: black;
 }
