@@ -78,27 +78,39 @@
   <!-- Main -->
   <main class="container main-contact">
     
-    <form class="container-fluid form rounded p-3">
+    <form class="container-fluid form rounded py-3 px-4 needs-validation" novalidate>
       <h4>Registrate</h4>
 
       <div class="row">
         <div class="col">
           <label for="first_name" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="first_name" placeholder="Nombre" aria-label="First name">
+          <input type="text" class="form-control" id="first_name" placeholder="Nombre" aria-label="First name" required>
+          <div class="valid-feedback">
+            Se ve bien!
+          </div>
         </div>
         <div class="col">
           <label for="last_name" class="form-label">Apellidos</label>
-          <input type="text" class="form-control" id="last_name" placeholder="Apellido" aria-label="Last name">
+          <input type="text" class="form-control" id="last_name" placeholder="Apellido" aria-label="Last name" required>
+          <div class="valid-feedback">
+            Se ve bien!
+          </div>
         </div>
 
         <div class="mb-3 my-2">
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+          <div class="invalid-feedback">
+            Porfavor ingresa un email valido
+          </div>
         </div>
 
         <div class="mb-3">
           <label for="phone" class="form-label">Phone</label>
-          <input type="Number" class="form-control" id="phone" placeholder="233123344">
+          <input type="number" class="form-control" id="phone" placeholder="233123344" required>
+          <div class="invalid-feedback">
+            Porfavor ingresa un numero de telefono valido
+          </div>
         </div>
       </div>
 
